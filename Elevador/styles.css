@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Alteração para exibir os botões em coluna */
+    align-items: center;
+}
+
+.floor-button {
+    margin: 2px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.floor-button.button-pressed {
+    background-color: #e74c3c; /* Vermelho para indicar botão pressionado */
+}
+
+.elevator {
+    width: 150px;
+    height: 50px;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color 0.5s;
+}
+
+.elevator.elevator-arrived {
+    background-color: #e74c3c; /* Vermelho para indicar chegada */
+}
+
+.elevator.blink-blue {
+    animation: blink-blue 2s infinite;
+}
+
+.elevator.blink-green {
+    animation: blink-green 2s infinite;
+}
+
+.floor-button.clicked {
+    animation: blink 1s;
+}
